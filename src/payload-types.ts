@@ -52,7 +52,6 @@ export interface Page {
       };
       id?: string;
     }[];
-    media: string | Media;
   };
   layout: (
     | {
