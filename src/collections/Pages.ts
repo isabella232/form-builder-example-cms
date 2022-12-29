@@ -2,6 +2,7 @@ import { CollectionConfig } from 'payload/types';
 import { publishedOnly } from '../access/publishedOnly';
 import { CallToAction } from '../blocks/CallToAction';
 import { Content } from '../blocks/Content';
+import { FormBlock } from '../blocks/Form';
 import { MediaBlock } from '../blocks/Media';
 import { hero } from '../fields/hero';
 import { slugField } from '../fields/slug';
@@ -43,6 +44,7 @@ export const Pages: CollectionConfig = {
               blocks: [
                 CallToAction,
                 Content,
+                FormBlock,
                 MediaBlock,
               ]
             }
