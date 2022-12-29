@@ -13,6 +13,13 @@ export default buildConfig({
     Pages,
     Users,
   ],
+  cors: [
+    'http://localhost:3000',
+    process.env.PAYLOAD_PUBLIC_SITE_URL,
+  ],
+  csrf: [
+    process.env.PAYLOAD_PUBLIC_SITE_URL,
+  ],
   globals: [
     MainMenu,
   ],
