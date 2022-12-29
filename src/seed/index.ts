@@ -4,13 +4,14 @@ import { home } from './home';
 import { anotherPage } from './another-page';
 
 export const seed = async (payload: Payload) => {
-  await payload.create({
-    collection: 'users',
-    data: {
-      email: 'dev@payloadcms.com',
-      password: 'test',
-    }
-  });
+  // await payload.create({
+  //   collection: 'users',
+  //   data: {
+  //     email: 'dev@payloadcms.com',
+  //     password: 'test',
+
+  //   }
+  // });
 
   const { id: mountainPhotoID } = await payload.create({
     collection: 'media',

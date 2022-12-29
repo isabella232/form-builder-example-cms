@@ -20,9 +20,9 @@ const start = async () => {
     },
   })
 
-  if (process.env.PAYLOAD_SEED === 'true') {
-    await seed(payload);
-  }
+  // if (process.env.PAYLOAD_SEED === 'true') {
+  //   await seed(payload);
+  // }
 
   app.listen(8000);
 }
