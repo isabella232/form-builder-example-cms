@@ -1,5 +1,5 @@
 {
-  "name": "form-builder-example-CMS",
+  "name": "form-builder-example-cms",
   "description": "The CMS that utilizes Payload's form builder plugin.",
   "version": "1.0.0",
   "main": "dist/server.js",

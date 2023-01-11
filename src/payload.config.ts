@@ -4,7 +4,6 @@ import FormBuilder from '@payloadcms/plugin-form-builder';
 import seo from '@payloadcms/plugin-seo';
 import { Users } from './collections/Users';
 import { Pages } from './collections/Pages';
-import { MainMenu } from './globals/MainMenu';
 
 export default buildConfig({
   collections: [
@@ -14,9 +13,6 @@ export default buildConfig({
   cors: [
     'http://localhost:3000',
     process.env.PAYLOAD_PUBLIC_SITE_URL,
-  ],
-  globals: [
-    MainMenu,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

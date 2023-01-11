@@ -9,27 +9,6 @@ export const hero: Field = {
   label: false,
   type: 'group',
   fields: [
-    {
-      type: 'select',
-      name: 'type',
-      label: 'Type',
-      required: true,
-      defaultValue: 'lowImpact',
-      options: [
-        {
-          label: 'High Impact',
-          value: 'highImpact',
-        },
-        {
-          label: 'Medium Impact',
-          value: 'mediumImpact',
-        },
-        {
-          label: 'Low Impact',
-          value: 'lowImpact',
-        },
-      ],
-    },
     richText({
       admin: {
         elements: [
