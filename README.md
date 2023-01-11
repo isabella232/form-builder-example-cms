@@ -8,7 +8,7 @@ This is an example repo for a CMS built with [Payload](https://payloadcms.com). 
 2. `cd` into the directory and run `yarn` or `npm install`
 3. Copy (`cp`) the `.env.example` file to an `.env` file
 4. Run `yarn dev` or `npm run dev` to start the development server
-5. Visit `http://localhost:8000` to access the admin panel
+5. Visit `http://localhost:8000/admin` to access the admin panel
 6. Login with the following credentials:
    - Email: `dev@payloadcms.com`
    - Password: `test`
