@@ -1,7 +1,6 @@
 import { CollectionConfig } from 'payload/types';
 import { publishedOnly } from '../access/publishedOnly';
 import { FormBlock } from '../blocks/Form';
-import { hero } from '../fields/hero';
 import { slugField } from '../fields/slug';
 
 export const Pages: CollectionConfig = {
@@ -25,12 +24,6 @@ export const Pages: CollectionConfig = {
     {
       type: 'tabs',
       tabs: [
-        {
-          label: 'Hero',
-          fields: [
-            hero,
-          ]
-        },
         {
           label: 'Content',
           fields: [

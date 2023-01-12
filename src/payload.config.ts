@@ -1,7 +1,6 @@
 import { buildConfig } from 'payload/config';
 import path from 'path';
 import FormBuilder from '@payloadcms/plugin-form-builder';
-import seo from '@payloadcms/plugin-seo';
 import { Users } from './collections/Users';
 import { Pages } from './collections/Pages';
 
@@ -22,11 +21,7 @@ export default buildConfig({
       fields: {
         payment: false
       },
+
     }),
-    seo({
-      collections: [
-        'pages',
-      ],
-    })
   ],
 });
