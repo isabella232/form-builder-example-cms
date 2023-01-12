@@ -16,3 +16,11 @@ This is an example repo for a CMS built with [Payload](https://payloadcms.com). 
 ## Frontend Development
 
 Clone the [frontend](https://github.com/payloadcms/form-builder-example-website) and follow the instructions there to get started. You can use this repo as a backend for the frontend and see for yourself how it all works together.
+
+## Usage
+
+Once booted up, an `Example Form` will be immediately available to view on the home page.
+
+- The `Example Form` is seeded into the `forms` collection.
+- A `Home` page has also been seeded in on start up and utilizes a layout building block called `Form Block` that is wired up to use the `Example Form` from the `forms` collection.
+- This is done by adding a relationship field in the form block config that has a `relationTo` set to the `forms` collection.
