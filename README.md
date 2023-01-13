@@ -19,8 +19,8 @@ Clone the [frontend](https://github.com/payloadcms/form-builder-example-website)
 
 ## Usage
 
-Once booted up, an `Example Form` will be immediately available to view on the home page.
+Once booted up, a `Basic Form` will be immediately available to view on the home page along with a few other forms on their corresponding pages.
 
-- The `Example Form` is seeded into the `forms` collection.
-- A `Home` page has also been seeded in on start up and utilizes a layout building block called `Form Block` that is wired up to use the `Example Form` from the `forms` collection.
+- These forms are seeded into the `forms` collection.
+- A few pages have also been seeded in on start up and utilize a layout building block called `Form Block` that is wired up to use the different forms from the `forms` collection.
 - This is done by adding a relationship field in the form block config that has a `relationTo` set to the `forms` collection.
