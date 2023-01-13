@@ -1,14 +1,14 @@
-export const shippingInformation = {
-  "title": "Shipping Information",
+export const advanced = {
+  "title": "Advanced",
   "layout": [
     {
-      "form": "{{SHIPPING_FORM_ID}}",
+      "form": "{{ADVANCED_FORM_ID}}",
       "enableIntro": true,
       "introContent": [
         {
           "children": [
             {
-              "text": "Example shipping information form:"
+              "text": "Advanced form:"
             }
           ],
           "type": "h4"
@@ -18,6 +18,6 @@ export const shippingInformation = {
       "blockType": "formBlock"
     }
   ],
-  "slug": "shipping-information",
+  "slug": "advanced",
   "_status": "published",
 }

@@ -1,6 +1,6 @@
-export const shippingInformationForm = {
+export const advancedForm = {
   "id": "63c0835134d40cef85cc11a2",
-  "title": "Shipping Information Form",
+  "title": "Advanced Form",
   "fields": [
     {
       "name": "first-name",

@@ -1,11 +1,11 @@
 import { Payload } from 'payload';
 import { home } from './home';
 import { contact } from './contact';
-import { shippingInformation } from './shippingInformation';
+import { advanced } from './advanced';
 import { signUp } from './signUp';
 import { basicForm } from './basicForm';
 import { contactForm } from './contactForm';
-import { shippingInformationForm } from './shippingInformationForm';
+import { advancedForm } from './advancedForm';
 import { signUpForm } from './signUpForm';
 
 export const seed = async (payload: Payload) => {
@@ -31,11 +31,11 @@ export const seed = async (payload: Payload) => {
     data: contactFormJSON,
   })
 
-  const shippingInformationFormJSON = JSON.parse(JSON.stringify(shippingInformationForm));
+  const advancedFormJSON = JSON.parse(JSON.stringify(advancedForm));
 
-  const { id: shippingFormID } = await payload.create({
+  const { id: advancedFormID } = await payload.create({
     collection: 'forms',
-    data: shippingInformationFormJSON,
+    data: advancedFormJSON,
   })
 
   const signUpFormJSON = JSON.parse(JSON.stringify(signUpForm));
@@ -49,7 +49,7 @@ export const seed = async (payload: Payload) => {
 
   const contactPageJSON = JSON.parse(JSON.stringify(contact).replace(/{{CONTACT_FORM_ID}}/g, contactFormID));
 
-  const shippingPageJSON = JSON.parse(JSON.stringify(shippingInformation).replace(/{{SHIPPING_FORM_ID}}/g, shippingFormID));
+  const advancedPageJSON = JSON.parse(JSON.stringify(advanced).replace(/{{ADVANCED_FORM_ID}}/g, advancedFormID));
 
   const signupPageJSON = JSON.parse(JSON.stringify(signUp).replace(/{{SIGNUP_FORM_ID}}/g, signUpFormID));
 
@@ -63,9 +63,9 @@ export const seed = async (payload: Payload) => {
     data: contactPageJSON,
   })
 
-  const { id: shippingPageID } = await payload.create({
+  const { id: advancedPageID } = await payload.create({
     collection: 'pages',
-    data: shippingPageJSON,
+    data: advancedPageJSON,
   })
 
   const { id: signupPageID } = await payload.create({
@@ -92,9 +92,9 @@ export const seed = async (payload: Payload) => {
             type: 'reference',
             reference: {
               relationTo: 'pages',
-              value: shippingPageID
+              value: advancedPageID
             },
-            label: 'Shipping Info Form',
+            label: 'Advanced Form',
           }
         },
         {
