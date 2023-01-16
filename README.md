@@ -23,4 +23,4 @@ Once booted up, a `Basic Form` will be immediately available to view on the home
 
 - These forms are seeded into the `forms` collection.
 - A few pages have also been seeded in on start up and utilize a layout building block called `Form Block` that is wired up to use the different forms from the `forms` collection.
-- This is done by adding a relationship field in the form block config that has a `relationTo` set to the `forms` collection.
+- This is done by adding a `relationship` field in the form-block config and setting its `relationTo` field to the `forms` collection.
